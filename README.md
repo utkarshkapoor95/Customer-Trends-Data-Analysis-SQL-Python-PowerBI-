@@ -58,22 +58,6 @@ This comprehensive data analytics project demonstrates a complete workflow for a
 
 ---
 
-## 📝 Sample SQL Query
-
-```sql
-SELECT 
-    gender,
-    COUNT(DISTINCT customer_id) AS customer_count,
-    SUM(purchase_amount) AS total_revenue,
-    AVG(purchase_amount) AS avg_purchase,
-    ROUND(SUM(purchase_amount) / SUM(SUM(purchase_amount)) OVER () * 100, 2) AS revenue_percentage
-FROM shopping_data
-GROUP BY gender
-ORDER BY total_revenue DESC;
-```
-
----
-
 ## 💡 Key Insights Discovered
 
 - 📈 **Category Performance:** Certain product categories generate significantly higher revenue and should be prioritized
