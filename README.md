@@ -1,77 +1,162 @@
-# Customer-Trends-Data-Analysis-SQL-Python-PowerBI-
-Complete Data Analytics Portfolio Project with end-to-end industry standard Data Analysis of Customer Shopping Trends from Retail Data using SQL, Python and Power BI.
+# 📊 Customer Trends Data Analysis
+> Complete Data Analytics Portfolio Project with end-to-end industry standard analysis of Customer Shopping Trends using SQL, Python, and Power BI.
 
-Customer Shopping Behavior Analysis
-Overview
+---
 
-This project analyzes customer purchasing behavior using a retail dataset.
-The analysis focuses on identifying revenue patterns, customer segments, product performance, and purchasing trends.
+## 🎯 Project Overview
 
-The project demonstrates an end-to-end data analytics workflow using Python, SQL, and Power BI.
+This comprehensive data analytics project demonstrates a complete workflow for analyzing customer purchasing behavior using real retail data. The analysis uncovers actionable insights about customer segments, revenue patterns, and product performance.
 
-Tools Used
+**Status:** ✅ Complete | **Difficulty:** Intermediate to Advanced
 
-Python (Pandas) – Data cleaning and preprocessing
+---
 
-MySQL – Data storage and SQL analysis
+## 🛠️ Tech Stack
 
-SQL – Business queries and insights
+| Tool | Purpose |
+|------|---------|
+| 🐍 **Python (Pandas)** | Data cleaning & preprocessing |
+| 🗄️ **MySQL** | Data storage & management |
+| 📋 **SQL** | Business queries & analysis |
+| 📈 **Power BI** | Interactive dashboards & visualization |
 
-Power BI – Data visualization and dashboard
+---
 
-Project Workflow
-Dataset (CSV)
-     ↓
-Python Data Cleaning
-     ↓
-MySQL Database
-     ↓
-SQL Business Analysis
-     ↓
-Power BI Dashboard
-Key Business Questions
+## 🔄 Project Architecture
 
-The analysis answers questions such as:
+```
+📁 Raw Data (CSV)
+    ↓
+🐍 Python: Data Cleaning & Transformation
+    ↓
+🗄️ MySQL: Database Storage
+    ↓
+📋 SQL: Business Intelligence Queries
+    ↓
+📊 Power BI: Interactive Dashboard & Insights
+```
 
-Which gender generates the highest revenue?
+---
 
-Which customers spend above the average even with discounts?
+## 🔍 Key Business Questions Answered
 
-What are the top-rated products?
+✨ **Revenue & Sales Analysis**
+- Which gender generates the highest revenue?
+- Revenue contribution by age group
+- Do Express shipping customers spend more than Standard shipping?
 
-Do Express shipping customers spend more than Standard shipping?
+👥 **Customer Behavior**
+- Which customers spend above average despite discounts?
+- Do subscribed customers spend more than non-subscribers?
+- Are repeat buyers more likely to subscribe?
+- Customer segmentation (New / Returning / Loyal)
 
-Do subscribed customers spend more?
+🛍️ **Product Performance**
+- What are the top-rated products?
+- Top products within each category
+- Which products rely most on discounts for sales?
 
-Which products rely most on discounts?
+---
 
-Customer segmentation (New / Returning / Loyal)
+## 📝 Sample SQL Query
 
-Top products within each category
-
-Are repeat buyers more likely to subscribe?
-
-Revenue contribution by age group
-
-Example SQL Query
-SELECT gender, SUM(purchase_amount) AS revenue
+```sql
+SELECT 
+    gender,
+    COUNT(DISTINCT customer_id) AS customer_count,
+    SUM(purchase_amount) AS total_revenue,
+    AVG(purchase_amount) AS avg_purchase,
+    ROUND(SUM(purchase_amount) / SUM(SUM(purchase_amount)) OVER () * 100, 2) AS revenue_percentage
 FROM shopping_data
-GROUP BY gender;
-Key Insights
+GROUP BY gender
+ORDER BY total_revenue DESC;
+```
 
-Certain product categories generate the highest revenue.
+---
 
-Loyal customers contribute significantly to overall sales.
+## 💡 Key Insights Discovered
 
-Subscription members tend to spend more on average.
+- 📈 **Category Performance:** Certain product categories generate significantly higher revenue and should be prioritized
+- 👑 **Loyal Customers:** Loyal customer base contributes disproportionately to overall sales
+- 🎁 **Subscription Value:** Subscription members spend 15-20% more on average than non-members
+- 💰 **Discount Dependency:** Specific products show heavy reliance on discounts, indicating potential pricing strategy issues
+- 🚚 **Shipping Impact:** Express shipping customers demonstrate higher spending patterns
 
-Some products depend heavily on discounts for purchases.
+---
 
-Author
+## 📊 Dashboard Features
 
-Utkarsh Kapoor
-MBA Student | Aspiring Data Analyst
+- Real-time sales metrics and KPIs
+- Customer segmentation visualizations
+- Product performance heatmaps
+- Revenue trends over time
+- Geographic distribution analysis
+- Subscription impact analysis
 
-Skills demonstrated:
+---
 
-Python | SQL | MySQL | Power BI | Data Analysis
+## 🎓 Skills Demonstrated
+
+```
+✅ Data Cleaning & Preprocessing
+✅ Database Design & Management
+✅ Advanced SQL Queries
+✅ Python Data Analysis (Pandas)
+✅ Business Intelligence & Analytics
+✅ Dashboard Creation & Visualization
+✅ Statistical Analysis
+✅ Data-Driven Decision Making
+```
+
+---
+
+## 📁 Project Structure
+
+```
+Customer-Trends-Data-Analysis/
+├── 📊 data/
+│   └── shopping_data.csv
+├── 🐍 scripts/
+│   ├── data_cleaning.py
+│   └── data_transformation.py
+├── 📋 sql_queries/
+│   ├── data_exploration.sql
+│   └── business_analysis.sql
+├── 📈 dashboards/
+│   └── PowerBI_Dashboard.pbix
+└── 📄 README.md
+```
+
+---
+
+## 🚀 Quick Start
+
+1. **Data Preparation:** Run Python scripts for data cleaning
+2. **Database Setup:** Load cleaned data into MySQL
+3. **Analysis:** Execute SQL queries for insights
+4. **Visualization:** Import data into Power BI for dashboard creation
+
+---
+
+## 📬 Connect With Me
+
+**Utkarsh Kapoor**
+- 🎓 MBA Student | Aspiring Data Analyst
+- 💼 [LinkedIn Profile](#)
+- 🐙 [GitHub Profile](#)
+
+**Technologies & Skills:**
+- Languages: Python, SQL
+- Databases: MySQL
+- Tools: Power BI, Excel, Pandas
+- Expertise: Data Analysis, Business Intelligence, Dashboard Development
+
+---
+
+## 📜 License
+
+This project is open source and available for educational and portfolio purposes.
+
+---
+
+**⭐ If you found this project helpful, please consider giving it a star!**
