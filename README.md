@@ -7,7 +7,7 @@
 
 Analyzes real retail shopping data to uncover actionable patterns in customer spending, product performance, and loyalty behavior. Full pipeline: raw CSV → Python cleaning → MySQL storage → SQL analysis → Power BI dashboard.
 
-**Status:** ✅ Complete | **Stack:** Python · MySQL · SQL · Power BI
+**Status:** Complete | **Stack:** Python · MySQL · SQL · Power BI
 
 ---
 
@@ -15,10 +15,10 @@ Analyzes real retail shopping data to uncover actionable patterns in customer sp
 
 | Tool | Purpose |
 |---|---|
-| 🐍 **Python (Pandas)** | Data cleaning & feature engineering |
-| 🗄️ **MySQL + SQLAlchemy** | Database storage & management |
-| 📋 **SQL** | Business intelligence queries (CTEs, window functions) |
-| 📈 **Power BI** | Interactive dashboards & KPI cards |
+| Python (Pandas) | Data cleaning and feature engineering |
+| MySQL + SQLAlchemy | Database storage and management |
+| SQL | Business intelligence queries (CTEs, window functions) |
+| Power BI | Interactive dashboards and KPI cards |
 
 ---
 
@@ -40,7 +40,7 @@ Power BI: Interactive Dashboard
 
 ## Key Business Questions Answered
 
-**Revenue & Sales**
+**Revenue and Sales**
 - Which gender generates the highest revenue?
 - Revenue contribution by age group
 - Do Express shipping customers spend more than Standard?
@@ -60,11 +60,11 @@ Power BI: Interactive Dashboard
 
 ## Key Insights (from the data)
 
-- **Gender Split:** 2,652 male (68%) vs 1,248 female (32%) customers by transaction volume
-- **Subscription Premium:** Subscribed customers spend 15–20% more on average
-- **Loyal Customer Value:** Customers with 10+ previous purchases drive disproportionate revenue
-- **Discount Dependency:** Several products show 40%+ of sales requiring discounts — a margin risk signal
-- **Shipping Insight:** Express shipping customers demonstrate higher average purchase amounts than Standard
+- Gender Split: 2,652 male (68%) vs 1,248 female (32%) customers by transaction volume
+- Subscription Premium: Subscribed customers spend 15-20% more on average
+- Loyal Customer Value: Customers with 10+ previous purchases drive disproportionate revenue
+- Discount Dependency: Several products show 40%+ of sales requiring discounts — a margin risk signal
+- Shipping Insight: Express shipping customers demonstrate higher average purchase amounts than Standard
 
 ---
 
@@ -90,7 +90,7 @@ See [`mysql_customer_behavior_queries.sql`](mysql_customer_behavior_queries.sql)
 | `customer_behavior_dashboard.pbix` | Power BI interactive dashboard |
 | `Customer Shopping Behavior Analysis.pdf` | Full analysis report |
 | `Customer-Shopping-Behavior-Analysis.pptx` | Business presentation deck |
-| `Business Problem Document.pdf` | Problem framing & objectives |
+| `Business Problem Document.pdf` | Problem framing and objectives |
 
 ---
 
@@ -102,7 +102,7 @@ pip install pandas sqlalchemy pymysql python-dotenv
 
 # 2. Configure MySQL credentials
 cp .env.example .env
-# Edit .env → set MYSQL_USER and MYSQL_PASSWORD
+# Edit .env and set MYSQL_USER and MYSQL_PASSWORD
 
 # 3. Run the notebook (clean data + load to MySQL)
 jupyter notebook customer_behavior_analysis.ipynb
@@ -118,7 +118,7 @@ jupyter notebook customer_behavior_analysis.ipynb
 
 ## Connect
 
-**Utkarsh Kapoor** — MBA | Operations → Data Analytics & AI
+**Utkarsh Kapoor** — MBA | Operations to Data Analytics and AI
 
 - [LinkedIn](https://linkedin.com/in/utkarsh-kapoor-618256203)
 - [GitHub](https://github.com/utkarshkapoor95)
